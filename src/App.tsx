@@ -302,11 +302,11 @@ export default function FractalUniverse() {
             } else {
               // Connection particle
               const connectionT = Math.random();
-              const otherClusterIndex =
-                (clusterIndex +
-                  1 +
-                  Math.floor(Math.random() * (clusters - 1))) %
-                clusters;
+              // const otherClusterIndex =
+              //   (clusterIndex +
+              //     1 +
+              //     Math.floor(Math.random() * (clusters - 1))) %
+              //   clusters;
               const otherClusterPos = new THREE.Vector3(
                 (Math.random() - 0.5) * 20,
                 (Math.random() - 0.5) * 20,
@@ -350,7 +350,7 @@ export default function FractalUniverse() {
             } else {
               // Flow lines
               const flowLine = Math.floor(Math.random() * 10);
-              const flowT = Math.random();
+              // const flowT = Math.random();
 
               // Create slightly curved flow lines
               x = (Math.random() - 0.5) * 30;
@@ -430,7 +430,7 @@ export default function FractalUniverse() {
             } else if (Math.random() > 0.4) {
               // Air currents / wind patterns
               const windLayer = Math.floor(Math.random() * 5) - 2;
-              const flowStrength = 15;
+              // const flowStrength = 15;
 
               x = (Math.random() - 0.5) * 30;
               z = (Math.random() - 0.5) * 30;
